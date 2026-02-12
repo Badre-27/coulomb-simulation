@@ -1,0 +1,14 @@
+# Build artifacts
+*.o
+*.exe
+*.out
+a.out
+
+# Raylib libraries
+libraylib.so
+libraylib.dylib
+
+# IDE/editor files
+.vscode/
+.clangd
+*.swp

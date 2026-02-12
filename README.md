@@ -42,5 +42,13 @@ A real-time physics simulation of **500 charged particles** interacting via Coul
 make
 
 ./coulomb-sim
-S
-S
+
+## Controls
+
+- Press `S` to save screenshot (`screenshot.png`)
+- Close window to exit
+
+
+## License
+
+MIT License

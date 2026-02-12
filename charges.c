@@ -80,7 +80,7 @@ void ComputeForces()
 
             float fcoulomb = F * c1->charge * c2->charge /r2; //The constant 1000 is just a "knob" to make the simulation look right on screeen.
             float fx = fcoulomb * nx;
-            float fy = fcoulomb * nx;
+            float fy = fcoulomb * ny;
 
             c1->fx -= fx;
             c1->fy -= fy;
@@ -166,7 +166,12 @@ int main() {
             ComputeForces();
             UpdateCharges(GetFrameTime());
             CollideWalls();
-            DrawCharges();
+            DrawCharges();// After DrawCharges():
+            if (IsKeyPressed(KEY_S)) {
+                TakeScreenshot("screenshot.png");
+                printf("Screenshot saved!\n");
+            }
+
         EndDrawing();
     }
 

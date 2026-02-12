@@ -9,10 +9,6 @@
 
 A real-time physics simulation of **500 charged particles** interacting via Coulomb's law, visualized with Raylib.
 
-
-
-
-
 ##  Build & Run
 
 

@@ -17,3 +17,6 @@ libraylib.dylib
 .vscode/
 .clangd
 *.swp
+
+# Build binaries
+build/charges

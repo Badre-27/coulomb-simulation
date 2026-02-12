@@ -1,5 +1,5 @@
 
-# ⚡ Coulomb Force Simulation
+#  Coulomb Force Simulation
 
 
 
@@ -11,27 +11,9 @@ A real-time physics simulation of **500 charged particles** interacting via Coul
 
 
 
-## 🔬 Physics Concepts Implemented
 
 
-
-| Concept | Implementation |
-
-|---------|----------------|
-
-| **Coulomb's Law** | `F = k·q₁·q₂/r²` with distance clamping (`r² < 1`) to prevent singularity explosions |
-
-| **Vector Decomposition** | Unit vectors: `nx = dx/d`, `ny = dy/d` to split force into x/y components |
-
-| **Force Accumulation** | Pattern: `ResetForces()` → `ComputeForces()` → `UpdateCharges()` |
-
-| **Numerical Integration** | Semi-implicit Euler method for stability (velocity updated before position) |
-
-| **Charge Distribution** | 50% negative (blue), 50% positive (red) charges |
-
-
-
-## 🛠️ Build & Run
+##  Build & Run
 
 
 
@@ -42,6 +24,7 @@ A real-time physics simulation of **500 charged particles** interacting via Coul
 make
 
 ./coulomb-sim
+```
 
 ## Controls
 

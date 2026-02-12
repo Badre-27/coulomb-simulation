@@ -78,14 +78,14 @@ void ComputeForces()
             float nx = dx/d;
             float ny = dy/d;
 
-            float fcoulomb = F * c1->charge * c2->charge /r2; //The constant 1000 is just a "knob" to make the simulation look right on screeen.
+            float fcoulomb = F * c1->charge * c2->charge /r2; //The constant F is just a "knob" to make the simulation look right on screeen.
             float fx = fcoulomb * nx;
             float fy = fcoulomb * ny;
 
             c1->fx -= fx;
             c1->fy -= fy;
-            c2->fx = fx;
-            c2->fy = fy;
+            c2->fx += fx;
+            c2->fy += fy;
 
 
         }
